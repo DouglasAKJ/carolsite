@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(250, 235, 215);
+    margin: 0;
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    height: 10vh;
+    width: 50vh;
+
+}
+
+.container{
+    display: flex;
+    margin: 100px;
+    flex-wrap: nowrap;
+
+}
+
+main#declaracao{
+    background-color: rgb(150, 140, 127);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 200%;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0px;
+
+}
+
+
+p#decla{
+
+}
+
+
+
+
+img#shycat{
+
+
+    margin-top: 350px;
+
+}
+main{
+    margin: 20;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700px;
+
+}
+.navbar ul{
+    background-color: rgb(70, 65, 58);
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: large;
+
+}
+.navbar a:hover{
+    background-color: rgb(26, 24, 21);;
+}
+.navbar li{
+    float: left;
+}

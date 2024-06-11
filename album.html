@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site!</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e1fcfe774b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Valentines Day!!</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Sobre a Carol</a></li>
+                <li><a href="declaracao.html">Declaração para a Carol</a></li>
+                <li><a href="album.html">Album com a Carol</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="titulo">The beginning</h1>
+
+    <main>
+        <audio autoplay loop id="audio">
+            volume
+            <source src="howl.mp3" type="audio/mpeg">
+
+        </audio>
+        <button id="prev-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+        <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <img src="images/madero.jpg" alt="" id="madero">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <img src="images/nos2.jpg" alt="" id="phone">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <img src="images/nos3.jpg" alt="" id="car">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <img src="images/nos15.jpg" alt="" id="mirror">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <img src="images/nos16.jpg" alt="" id="circus">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <img src="images/nos5.jpg" alt="" id="mirror">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 4 -->
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <img src="images/nos14.jpg" alt="" id="car">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b4" class="back-content">
+                        <img src="images/nos6.jpg" alt="" id="mirror">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 5 -->
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-content">
+                        <img src="images/nos9.jpg" alt="" id="mirror">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b5" class="back-content">
+                        <img src="images/nos7.jpg" alt="" id="car">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paper 6 -->
+            <div id="p6" class="paper">
+                <div class="front">
+                    <div id="f6" class="front-content">
+                        <img src="images/nos8.jpg" alt="" id="car">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b6" class="back-content">
+                        <img src="images/best.jpg" alt="" id="circus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="next-btn">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+    </main>
+</body>
+
+</html>
