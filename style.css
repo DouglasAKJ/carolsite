@@ -26,8 +26,8 @@ main#declaracao{
     font-weight: 700;
     font-size: 200%;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 0px;
 
 }
@@ -78,4 +78,13 @@ h1{
 }
 .navbar li{
     float: left;
+}
+
+@media (max-width: 1440px){
+
+    main#declaracao{
+            margin-left: 10%;
+            margin-right: 10%;
+    }
+    
 }
