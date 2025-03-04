@@ -1,15 +1,14 @@
-
 body {
     margin: 0;
     font-family: sans-serif;
     background-color: rgb(250, 235, 215);
 }
 
-h1#titulo{
+h1#titulo {
     margin-top: 50px;
 }
 
-img{
+img {
     width: 250px;
     height: 300px;
     justify-content: center;
@@ -27,7 +26,7 @@ img#circus {
     justify-content: center;
 }
 
-main{
+main {
     margin: 20;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -37,33 +36,57 @@ main{
     justify-content: center;
     align-items: center;
 }
-h1{
+
+h1 {
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 700px;
 
 }
-.navbar ul{
+
+.navbar {
+    display: flex;
+    justify-content: center;
     background-color: rgb(70, 65, 58);
+    width: 100%;
+}
+
+.navbar ul {
+
     list-style-type: none;
     padding: 0px;
-    margin-top: 0px;
+    margin: 0px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-.navbar a{
+
+.navbar a {
     font-family: "Roboto", sans-serif;
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     display: block;
     font-size: large;
+    box-sizing: border-box;
+    width: 100%;
 
 }
-.navbar a:hover{
-    background-color: rgb(26, 24, 21);;
+
+
+.navbar a:hover {
+    background-color: rgb(26, 24, 21);
+    position: relative;
+
 }
-.navbar li{
+
+.active {
+    background-color: rgb(34, 32, 29);
+}
+
+.navbar li {
     float: left;
+    margin: 0px 25px;
 }
 
 
@@ -172,4 +195,3 @@ i {
 #p6 {
     z-index: 1;
 }
-

@@ -1,90 +1,237 @@
-body{
+body {
     background-color: rgb(250, 235, 215);
     margin: 0;
-    
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
-section{
+
+section {
     display: flex;
     flex-direction: row;
 }
-aside{
+
+aside {
     height: 10vh;
     width: 50vh;
 
 }
 
-.container{
+.container {
     display: flex;
     margin: 100px;
     flex-wrap: nowrap;
 
 }
 
-main#declaracao{
+main#declaracao {
     background-color: rgb(150, 140, 127);
     font-family: "Dancing Script", cursive;
     font-weight: 700;
     font-size: 200%;
     align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 0px;
 
 }
 
 
-p#decla{
+
+
+
+h1#titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-
-
-img#shycat{
+img#shycat {
 
 
     margin-top: 350px;
 
 }
-main{
+
+main {
     margin: 20;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     margin: 20px;
 }
-h1{
+
+h1 {
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 700px;
 
 }
-.navbar ul{
+
+.navbar {
+    display: flex;
+    justify-content: center;
     background-color: rgb(70, 65, 58);
+    width: 100%;
+}
+
+.navbar ul {
+
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-.navbar a{
+
+.navbar a {
     font-family: "Roboto", sans-serif;
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     display: block;
     font-size: large;
+    box-sizing: border-box;
+    width: 100%;
 
 }
-.navbar a:hover{
-    background-color: rgb(26, 24, 21);;
+
+
+.navbar a:hover {
+    background-color: rgb(26, 24, 21);
+    position: relative;
+
 }
-.navbar li{
+
+.active {
+    background-color: rgb(34, 32, 29);
+}
+
+.navbar li {
     float: left;
+    margin: 0px 25px;
 }
 
-@media (max-width: 1440px){
 
-    main#declaracao{
-            margin-left: 10%;
-            margin-right: 10%;
-    }
-    
+.center {
+    width: 100%;
 }
+
+.top {
+    width: 100%;
+    height: 100vh;
+    font-family: poppins;
+    font-size: 100px;
+    color: rgb(61, 55, 43);
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.left {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.left-item {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 110px;
+    font-family: poppins;
+    font-weight: 600;
+    color: white;
+}
+
+.text {
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 300;
+    color: white;
+}
+
+.right {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.25s;
+    transform: scale(0.3);
+}
+
+.item.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.item img {
+    width: 350px;
+}
+
+.item button {
+    background: white;
+    padding: 15px 40px;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 7mm;
+    margin-top: 50px;
+}
+
+.item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    z-index: -1;
+}
+
+@media screen and (max-width: 1090px) {}
