@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Sobre a Carol</a></li>
+                <li><a href="declaracao.html">Declaração para a Carol</a></li>
+                <li><a href="album.html">Album com a Carol</a></li>
+                <li><a href ="1year.html">Primeiro Ano</a></li>
+                <li><a href="contador.html">Contador</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contador">
+        <div class="texto">
+            <h2>Estamos juntos há</h2>
+            <p id="data"></p>
+
+            <p>E que comemoremos infinitos aniversários e dia dos namorados juntos!</p>
+            <p>Te amo meu amor! ❤</p>
+            <br><br>
+            <p>Acho que essa imagem define bem esse namoro!</p>
+
+            <img src="/images/20250503_200102.jpg" alt="1 neuronio" id="neuronio">
+        </div>
+    </main>
+    
+
+    
+
+    <script>
+
+        setInterval(() => {
+             data = new Date();
+        const dataNamoro = new Date(2024, 2, 4);
+        let contador = data.getTime() - dataNamoro.getTime();
+        let finalYear = data.getUTCFullYear() - dataNamoro.getUTCFullYear();
+        let finalMonth = data.getUTCMonth() - dataNamoro.getUTCMonth();
+        let finalDay = data.getUTCDate() - dataNamoro.getUTCDate();
+        let finalHours = data.getUTCHours() - dataNamoro.getUTCHours();
+        let finalMinutes = data.getUTCMinutes() - dataNamoro.getUTCMinutes();
+        let finalSeconds = data.getUTCSeconds() - dataNamoro.getUTCSeconds();
+        console.log(dataNamoro.getUTCMonth());
+        console.log(finalMonth);
+        document.getElementById("data").innerHTML = finalYear + ((finalYear <= 1) ? " ano " : " anos ") + finalMonth + ((finalMonth <= 1) ? " mes ": " meses ") + finalDay + ((finalDay <= 1)? " dia " : " dias ") + finalHours + ((finalHours <= 1)? " hora " : " horas ") + finalMinutes + ((finalMinutes <= 1)? " minuto " : " minutos ") + "e " + finalSeconds + ((finalSeconds <= 1 )? " segundo " : " segundos ");
+        }, 1000);
+        
+    </script>
+    
+</body>
+</html>
